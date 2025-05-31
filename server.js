@@ -30,6 +30,9 @@ requiredDirs.forEach((dir) => {
 // Initialize video processor
 const videoProcessor = new VideoProcessor(io);
 
+// Trust the first proxy (Render's proxy)
+app.set("trust proxy", 1);
+
 // Security middleware
 app.use(
   helmet({
