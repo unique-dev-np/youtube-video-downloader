@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube Downloader Pro - Yuganta Tech</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iOCIgZmlsbD0iIzRGNTFFNSIvPgo8cGF0aCBkPSJNOSAxMi41TDIzIDEyLjVNOSAxNi41TDE5IDE2LjVNOSAyMC41TDIxIDIwLjUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPg=="
+    />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <div class="container">
+          <div class="header-content">
+            <div class="logo">
+              <h1>🎬 YouTube Downloader Pro</h1>
+              <span class="brand">Powered by Yuganta Tech</span>
+            </div>
+            <div class="header-stats">
+              <div class="stat">
+                <span class="stat-value" id="activeDownloads">0</span>
+                <span class="stat-label">Active Downloads</span>
+              </div>
+              <div class="connection-status" id="connectionStatus">
+                <div class="status-indicator"></div>
+                <span>Connected</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="main">
+        <div class="container">
+          <!-- URL Input Section -->
+          <section class="url-section">
+            <div class="input-group">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  id="urlInput"
+                  placeholder="Paste YouTube URL here (e.g., https://youtube.com/watch?v=...)"
+                  class="url-input"
+                  autocomplete="off"
+                />
+                <div class="input-actions">
+                  <button id="clearBtn" class="btn-icon" title="Clear">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <button id="analyzeBtn" class="btn btn-primary">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="M21 21l-4.35-4.35"></path>
+                </svg>
+                Analyze Video
+              </button>
+            </div>
+            <div class="url-suggestions" id="urlSuggestions"></div>
+          </section>
+
+          <!-- Progress Section -->
+          <section class="progress-section" id="progressSection">
+            <div class="progress-card">
+              <div class="progress-header">
+                <h3 id="progressTitle">Analyzing video...</h3>
+                <div class="progress-percentage" id="progressPercentage">
+                  0%
+                </div>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+              </div>
+              <div class="progress-details" id="progressDetails">
+                <span>Initializing...</span>
+              </div>
+            </div>
+          </section>
+
+          <!-- Video Info Section -->
+          <section class="video-section" id="videoSection">
+            <div class="video-card">
+              <div class="video-thumbnail-container">
+                <img
+                  id="videoThumbnail"
+                  src=""
+                  alt="Video thumbnail"
+                  class="video-thumbnail"
+                />
+                <div class="video-duration" id="videoDuration"></div>
+              </div>
+              <div class="video-info">
+                <h2 id="videoTitle"></h2>
+                <div class="video-meta">
+                  <div class="channel-info">
+                    <span id="videoAuthor"></span>
+                    <div class="video-stats">
+                      <span id="videoViews"></span>
+                      <span id="videoUploadDate"></span>
+                    </div>
+                  </div>
+                </div>
+                <p id="videoDescription" class="video-description"></p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Download Section -->
+          <section class="download-section" id="downloadSection">
+            <div class="download-card">
+              <div class="download-header">
+                <h3>📥 Download Options</h3>
+                <div class="format-toggle">
+                  <button class="format-btn active" data-type="video">
+                    Video
+                  </button>
+                  <button class="format-btn" data-type="audio">
+                    Audio Only
+                  </button>
+                </div>
+              </div>
+              <div class="formats-grid" id="formatsGrid">
+                <!-- Format options will be populated here -->
+              </div>
+              <div class="download-actions">
+                <button id="downloadBtn" class="btn btn-download">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path>
+                    <polyline points="7,10 12,15 17,10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  Download Selected Format
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Active Downloads -->
+          <section class="downloads-list" id="downloadsList">
+            <h3>📋 Active Downloads</h3>
+            <div class="downloads-container" id="downloadsContainer">
+              <!-- Active downloads will be populated here -->
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Notification System -->
+      <div class="notifications" id="notifications"></div>
+
+      <!-- Loading Overlay -->
+      <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Processing request...</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/utils/api.js"></script>
+    <script src="js/components/NotificationSystem.js"></script>
+    <script src="js/components/ProgressBar.js"></script>
+    <script src="js/components/VideoCard.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

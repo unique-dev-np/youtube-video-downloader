@@ -1,0 +1,45 @@
+{"level":"info","message":"🚀 Yuganta Tech YouTube Downloader running on port 3000","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:08:40.381Z"}
+{"level":"info","message":"📱 Environment: development","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:08:40.390Z"}
+{"level":"info","message":"🔧 Health check: http://localhost:3000/api/health","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:08:40.396Z"}
+{"level":"info","message":"Client connected: W5cv0FKlCnb5N4lrAAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:09:00.942Z"}
+{"level":"info","message":"Client disconnected: W5cv0FKlCnb5N4lrAAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:09:27.861Z"}
+{"level":"info","message":"Client connected: vJWTIhT7TXycF4e4AAAD","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:09:28.088Z"}
+{"level":"info","message":"Fetching video info for: https://youtu.be/DL82mGde6wo?si=MfFANY0votR-ZOXc","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:09:45.571Z"}
+{"level":"info","message":"Fetching video info for: https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:10:49.633Z"}
+{"level":"info","message":"Starting download: 284512a4-ecae-421b-b6ea-24dc0e891fc6 for https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:11:12.190Z"}
+{"level":"error","message":"Download failed: 284512a4-ecae-421b-b6ea-24dc0e891fc6 No such format found: 251","service":"yuganta-youtube-downloader","stack":"Error: No such format found: 251\n    at exports.chooseFormat (D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\format-utils.js:140:11)\n    at downloadFromInfoCallback (D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\index.js:83:26)\n    at D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\index.js:20:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-05-31T12:11:37.723Z"}
+{"level":"info","message":"Client disconnected: vJWTIhT7TXycF4e4AAAD","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:11:58.734Z"}
+{"level":"info","message":"Client connected: 5j4T4-aCHSeeogMMAAAF","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:11:59.067Z"}
+{"level":"info","message":"Fetching video info for: https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:12:01.991Z"}
+{"level":"info","message":"Starting download: 4b944294-c9ae-4b75-8fb7-2546a95e55be for https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:12:34.352Z"}
+{"level":"info","message":"Download completed: 4b944294-c9ae-4b75-8fb7-2546a95e55be","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:12:57.224Z"}
+{"level":"info","message":"Starting download: 5a531921-6a65-4032-b85d-2126bebce5f3 for https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:13:04.091Z"}
+{"level":"error","message":"Download failed: 5a531921-6a65-4032-b85d-2126bebce5f3 No such format found: 251","service":"yuganta-youtube-downloader","stack":"Error: No such format found: 251\n    at exports.chooseFormat (D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\format-utils.js:140:11)\n    at downloadFromInfoCallback (D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\index.js:83:26)\n    at D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\index.js:20:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-05-31T12:13:17.984Z"}
+{"level":"info","message":"Starting download: 3a9dbed5-d1fe-4ac1-bb05-6a1be64e523b for https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:15:51.375Z"}
+{"level":"info","message":"Download completed: 3a9dbed5-d1fe-4ac1-bb05-6a1be64e523b","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:16:47.310Z"}
+{"level":"info","message":"Starting download: d76e914a-5614-40d2-a7c9-f93d2a4de10b for https://youtu.be/Svp2MXZOXpQ?si=Us_cJUiwZlSHMxE_","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:17:25.575Z"}
+{"level":"error","message":"Download failed: d76e914a-5614-40d2-a7c9-f93d2a4de10b No such format found: 251","service":"yuganta-youtube-downloader","stack":"Error: No such format found: 251\n    at exports.chooseFormat (D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\format-utils.js:140:11)\n    at downloadFromInfoCallback (D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\index.js:83:26)\n    at D:\\Programming\\Web\\yt-video-downloader\\node_modules\\@distube\\ytdl-core\\lib\\index.js:20:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-05-31T12:17:59.305Z"}
+{"level":"info","message":"🚀 Yuganta Tech YouTube Downloader running on port 3000","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:13.924Z"}
+{"level":"info","message":"📱 Environment: development","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:13.940Z"}
+{"level":"info","message":"🔧 Health check: http://localhost:3000/api/health","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:13.940Z"}
+{"level":"info","message":"Client connected: 6ir1qGozWZBHgC5RAAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:14.604Z"}
+{"level":"info","message":"🚀 Yuganta Tech YouTube Downloader running on port 3000","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:25.023Z"}
+{"level":"info","message":"📱 Environment: development","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:25.035Z"}
+{"level":"info","message":"🔧 Health check: http://localhost:3000/api/health","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:25.036Z"}
+{"level":"info","message":"Client connected: zxcw4zWI3zNPBmPHAAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:20:25.123Z"}
+{"level":"info","message":"Client disconnected: zxcw4zWI3zNPBmPHAAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:24:48.353Z"}
+{"level":"info","message":"Client connected: I6k67RPxyLNPo4O0AAAD","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:24:49.597Z"}
+{"level":"info","message":"🚀 Yuganta Tech YouTube Downloader running on port 3000","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:28:57.133Z"}
+{"level":"info","message":"📱 Environment: development","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:28:57.335Z"}
+{"level":"info","message":"🔧 Health check: http://localhost:3000/api/health","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:28:57.635Z"}
+{"level":"info","message":"Client connected: J1CBl4LEb6EVnn14AAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:28:59.932Z"}
+{"level":"info","message":"Client disconnected: J1CBl4LEb6EVnn14AAAB","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:29:01.917Z"}
+{"level":"info","message":"Client connected: LeN-I7k-kB2VoxVeAAAD","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:29:03.741Z"}
+{"level":"info","message":"Fetching video info for: https://youtu.be/DL82mGde6wo?si=vJ1SxIgnSZaPUq4t","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:29:16.771Z"}
+{"level":"info","message":"Starting download: 473b0a9a-73cf-4596-9c52-a091e2b60279 for https://youtu.be/DL82mGde6wo?si=vJ1SxIgnSZaPUq4t, format: 251","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:29:56.502Z"}
+{"level":"info","message":"Client disconnected: LeN-I7k-kB2VoxVeAAAD","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:30:49.451Z"}
+{"level":"info","message":"Client connected: 7OLD5kFdGpkwiu9kAAAF","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:30:51.134Z"}
+{"level":"info","message":"Fetching video info for: https://youtu.be/Svp2MXZOXpQ?si=Dou8gY6okWey4u5Y","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:31:30.308Z"}
+{"level":"info","message":"Starting download: cacad788-ecce-4050-ba27-f6290c89bad6 for https://youtu.be/Svp2MXZOXpQ?si=Dou8gY6okWey4u5Y, format: 251","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:31:48.375Z"}
+{"level":"info","message":"Download completed: cacad788-ecce-4050-ba27-f6290c89bad6","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:32:34.781Z"}
+{"level":"info","message":"Client disconnected: 7OLD5kFdGpkwiu9kAAAF","service":"yuganta-youtube-downloader","timestamp":"2025-05-31T12:34:03.741Z"}
